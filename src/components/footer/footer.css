@@ -1,0 +1,119 @@
+.footer {
+    background-position: right center;
+  }
+
+  .footer .max-width .footer-content {
+    background-color: #fff;
+    border-radius: 12px;
+  }
+
+  .footer .max-width .footer-content .btn {
+    width: 158px;
+    height: 48px;
+    margin-top: 20px;
+  }
+
+.end {
+  padding: 70px 0px;
+  padding-bottom: 0px;
+}
+.end .max-width {
+  max-width: 1320px;
+  padding: 0 60px;
+  margin-inline: auto;
+}
+
+.foot-1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+.foot-1 .col {
+  width: calc(25% - 23px);
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.foot-1 .col:nth-child(2) .secondary {
+  margin-top: 8px;
+  line-height: 14px;
+}
+.foot-1 .col:nth-child(3) .secondary {
+  margin-top: 8px;
+  line-height: 14px;
+}
+.foot-1 .col:nth-child(4) .secondary {
+  margin-top: 8px;
+  line-height: 14px;
+}
+.foot-1 .col .text-1 {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.foot-1 .col .primary {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+.foot-1 .col .secondary {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: capitalize;
+}
+
+.foot-2 {
+  padding: 20px 0px;
+  border-top: 2px solid #f4f4f4;
+}
+.foot-2 .foot-2_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.foot-2 .foot-2_content .text {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+}
+.foot-2 .foot-2_content .icons {
+  display: inline-flex;
+  gap: 3px;
+}
+.foot-2 .foot-2_content .icons li {
+  font-size: 14px;
+  list-style: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1020px) {
+  .foot-1 .col {
+    width: calc(50% - 23px);
+  }
+}
+@media screen and (max-width: 400px) {
+  .foot-1 .col {
+    width: calc(100% - 33px);
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .end .max-width {
+    padding: 0 0;
+    width: 95%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .foot-2 .foot-2_content {
+    flex-direction: column;
+  }
+}

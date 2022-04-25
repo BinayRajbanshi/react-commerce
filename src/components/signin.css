@@ -1,0 +1,97 @@
+.login-form{
+    z-index: 99999;
+    width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+    background-color: white !important;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.2);
+    transition: 0.4s all ease;
+  }
+  .login-form.active{
+    visibility: visible;
+    transform-origin:center ;
+    opacity: 1;
+    pointer-events: all;
+    transform: scale(1);
+    transform: translate(-50%,-50%);
+  }
+  .login-form .max-width{
+    padding: 40px 25px;
+  }
+  .login-form header{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 22px ;
+  }
+  .login-form form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+  }
+  .login-form form .form-item{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .login-form form .form-item input{
+    width: 100%;
+    padding: 8px 5px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+  
+  }
+  .login-form form .form-item input:focus{
+    outline: none;
+  }
+  .login-form .btn{
+    display: block;
+    width: 100%;
+  }
+  .login-form .btn button{
+    width: 100%;
+    padding: 15px 0px;
+    border-radius: 8px;
+    background-color: #242527;
+    color: #fff;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .form-end{
+    margin-top: 20px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .form-end a{
+    text-decoration: none;
+    color: #222;
+  }
+  .login-form .i{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 15px;
+    top: 12px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .form-content button{
+      border: none;
+  }
+  

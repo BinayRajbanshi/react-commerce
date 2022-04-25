@@ -1,0 +1,73 @@
+.features {
+    padding: 70px 0px;
+    box-shadow: 20px 25px rgba(0, 0, 0, 0.15);
+  }
+  .features .max-width {
+    max-width: 1320px;
+    padding: 0 60px;
+    margin-inline: auto;
+  }
+  .features .max-width .heading {
+    margin-bottom: 2.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #23262a;
+  }
+  
+  .features-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .features-content .card {
+    width: calc(25% - 20px);
+    background-color: #f4f4f4;
+    margin-top: 20px;
+  }
+  .features-content .card .box {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #222;
+    gap: 10px;
+  }
+  .features-content .card .box .icon {
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 24px;
+  }
+  .features-content .card .box .text-1 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .features-content .card .box .text-2 {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .features-content .card .box p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    line-height: 22.652px;
+  }
+  
+  @media screen and (max-width: 1230px) {
+    .features-content .card {
+      width: calc(50% - 33px);
+    }
+  }
+  @media screen and (max-width: 816px) {
+    .features-content .card {
+      width: calc(100% - 33px);
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .features .max-width {
+      padding: 0 0;
+      width: 95%;
+    }
+}

@@ -1,0 +1,107 @@
+nav .cart {
+    z-index: 99;
+    font-family: "Poppins", sans-serif;
+    width: 35rem;
+    background-color: white;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh !important;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 3rem;
+    transform: translateX(100%);
+    transition: all 0.4s ease-in-out;
+  }
+  
+  nav .cart.active {
+    transform: translateX(0%);
+  }
+  
+  nav .cart .heading {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 1.2rem 0;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  nav .cart .close {
+    z-index: 111;
+    color: black;
+    font-size: 2.4rem;
+    cursor: pointer;
+  }
+  
+  nav .cart .cart-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding: 2rem 0;
+  }
+  
+  nav .cart .cart-box.toggle {
+    display: none;
+  }
+  
+  nav .cart .cart-box .item-description .item-name {
+    font-weight: 400;
+  }
+  
+  nav .cart .cart-box .item-description .item-price {
+    margin-top: 0.6rem;
+    color: rgba(34, 34, 34, 0.7);
+  }
+  
+  nav .cart .cart-box .item-img {
+    position: relative;
+  }
+  
+  nav .cart .cart-box .item-img img {
+    width: 78px;
+    height: 78px;
+    object-fit: cover;
+  }
+  
+  nav .cart .cart-box .item-img .cross {
+    background-color: white;
+    position: absolute;
+    right: -0.5rem;
+    top: -0.6rem;
+    border-radius: 50%;
+    width: 2.4rem;
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  
+  nav .cart .total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+    font-weight: 600;
+  }
+  
+  nav .cart .cart-buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.8rem;
+    gap: 1rem;
+  }
+  
+  nav .cart .cart-buttons button {
+    font-weight: 600;
+    padding: 14px 1px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  

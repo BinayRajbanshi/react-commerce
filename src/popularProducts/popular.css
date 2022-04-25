@@ -1,0 +1,177 @@
+.popular {
+    padding: 70px 0px;
+    
+  }
+  .popular .max-width {
+    max-width: 1320px;
+    padding: 0 60px;
+    margin-inline: auto;
+  }
+  .popular .max-width .heading {
+    margin-bottom: 2.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #23262a;
+    margin-bottom: 0.8rem;
+  }
+  .popular .max-width .popular-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 27rem);
+    justify-content: center;
+    gap: 20px;
+  }
+  .popular .max-width .popular-content .card {
+    margin-top: 24px;
+  }
+  .action li button{
+    border:none;
+    cursor: pointer;
+  }
+  .img {
+    /* width: 270px;
+    height: 270px; */
+    overflow: hidden;
+    /* position: relative; */
+  }
+  .popular .max-width .popular-content .card:hover img {
+    transform: scale(1.15);
+  }
+  .popular .max-width .popular-content .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .popular .max-width .popular-content .card .box img {
+    cursor: pointer;
+    display: block;
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    
+  }
+  .popular .max-width .popular-content .card .box .text-1 {
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .popular .max-width .popular-content .card .box .text-2 {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  .popular .max-width .popular-content .card .box .stars {
+    cursor: pointer;
+    font-size: 13px;
+    color: rgba(35, 38, 42, 0.8);
+  }
+  .popular .max-width .popular-content .card .box .text-3 {
+    font-size: 14px;
+  }
+  .popular .max-width .popular-content .card .box .text-3 del {
+    color: rgba(35, 38, 42, 0.7);
+    font-size: 12px;
+    margin-right: 4px;
+  }
+
+  .action {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .action li {
+    position: relative;
+    list-style: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #23262a;
+    margin: 4px;
+    cursor: pointer;
+    transform: translateX(60px);
+    transition: transform 0.3s;
+    font-size: 12px;
+  }
+ 
+  .action li:hover span {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0px);
+  }
+  .action li span {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%) translateX(-25px);
+    white-space: nowrap;
+    padding: 4px 10px;
+    background-color: #fff;
+    color: #23262a;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 4px;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.2s ease;
+  }
+  .action li span::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: -4px;
+    background: #fff;
+    transform: rotate(45deg);
+    width: 8px;
+    height: 8px;
+  }
+  
+  .popular .max-width .popular-content .card:hover .action li {
+    transform: translateX(0px);
+  }
+  
+  .action li:nth-child(2) {
+    transition-delay: 0.1s;
+  }
+  
+  .action li:nth-child(3) {
+    transition-delay: 0.2s;
+  }
+  
+  .quick-view {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(35, 38, 42, 0.7);
+    transition: all 0.3s ease;
+    transform: translateY(47px);
+  }
+  .quick-view:hover {
+    background-color: #23262a;
+  }
+  .quick-view .a {
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 0;
+  }
+  
+  .popular .max-width .popular-content .card:hover .quick-view {
+    transform: translateY(0px);
+  }
+
+  @media screen and (max-width: 900px) {
+    .popular .max-width {
+      padding: 0 0;
+      width: 95%;
+    }
+} 

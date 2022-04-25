@@ -1,0 +1,33 @@
+.swiper-1{
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+}
+.slide-box{
+    position: relative;
+}
+.slide-box .text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    background-color: rgba(225,225,225 , 0.8);
+    color: rgba(0,0,0,0.8);
+    padding-inline: 50px;
+    padding-block:10px;
+    border-top: 8px solid lightgrey;
+    border-right: 8px solid lightgrey;
+}
+.slide-box .text-box .text-1{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+.slide-box .text-box .text-2{
+    font-size: 20px;
+    letter-spacing: 2px;
+
+}
+.firs{
+    background-color: rgba(255,255,255,0.8) !important;
+}
